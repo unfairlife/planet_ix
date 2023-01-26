@@ -1,5 +1,5 @@
-# import pyautogui
-# pyautogui.displayMousePosition()
+import pyautogui
+pyautogui.displayMousePosition()
 
 # #X: 1962 Y:  740 RGB: (255, 170,  35)
 import win32gui
@@ -32,6 +32,6 @@ class WindowMgr:
         win32gui.SetForegroundWindow(self._handle)
 
 
-# w = WindowMgr()
-# w.find_window_wildcard("Bombcrypto - Google Chrome")
-# w.set_foreground()
+w = WindowMgr()
+w.find_window_wildcard("Mission Control - Google Chrome")
+w.set_foreground()
