@@ -43,8 +43,8 @@ for contas in (meta_accounts):
 
     #time.sleep(100)
     #Passwords
-    WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, "//*[@id='app-content']/div/div[2]/div/div/div/div[2]/form/div[1]/label/input"))).send_keys("ENDlessc@ve1")
-    WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, "//*[@id='app-content']/div/div[2]/div/div/div/div[2]/form/div[2]/label/input"))).send_keys("ENDlessc@ve1")
+    WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, "//*[@id='app-content']/div/div[2]/div/div/div/div[2]/form/div[1]/label/input"))).send_keys("METAMASKPASSWORD@ve1")
+    WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, "//*[@id='app-content']/div/div[2]/div/div/div/div[2]/form/div[2]/label/input"))).send_keys("METAMASKPASSWORD")
 
     #Seed phrase
     #seven lunch used midnight quality fresh sleep little siren choice artwork then
