@@ -9,16 +9,13 @@ from selenium.webdriver.common.keys import Keys
 from time import sleep
 from PIL.ImageOps import grayscale
 import pyautogui
-import time
-import keyboard
-import numpy as np
-from random import randint
-from accounts import accounts
 
 import time
 meta_accounts = [
-        "",
-        ""]
+        "SUA CHAVE DE EXPORT DA CARTEIRA AQUI",
+        "SUA CHAVE DE EXPORT DA CARTEIRA AQUI",
+        "SUA CHAVE DE EXPORT DA CARTEIRA AQUI",
+        "SUA CHAVE DE EXPORT DA CARTEIRA AQUI"]
 
 EXTENSION_PATH = r'C:\Users\Mateus\Documents\Python\MetaMask 10.24.1.0.crx'
 
@@ -43,7 +40,7 @@ for contas in (meta_accounts):
 
     #time.sleep(100)
     #Passwords
-    WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, "//*[@id='app-content']/div/div[2]/div/div/div/div[2]/form/div[1]/label/input"))).send_keys("METAMASKPASSWORD@ve1")
+    WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, "//*[@id='app-content']/div/div[2]/div/div/div/div[2]/form/div[1]/label/input"))).send_keys("METAMASKPASSWORD")
     WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, "//*[@id='app-content']/div/div[2]/div/div/div/div[2]/form/div[2]/label/input"))).send_keys("METAMASKPASSWORD")
 
     #Seed phrase
@@ -145,6 +142,8 @@ for contas in (meta_accounts):
             len(driver.find_elements(By.XPATH, "//*[contains(text(),'$0.05')]")) >0):
 
             print('Valor pagavel, eu clicaria na metamask')
+        
+           #UNCOMMENT HERE TO ACTUALLY ACCEPT THE TRANSACTION TO REDEEM
             #WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, "//*[@id='app-content']/div/div[2]/div/div[5]/div[3]/footer/button[2]"))).click()
 
         else:
