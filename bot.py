@@ -17,8 +17,8 @@ from accounts import accounts
 
 import time
 meta_accounts = [
-        "4bbb796b2bd6e5ea7332c676a221c72f04f9416f44574a2395494cade5813adf",
-        "e8317b0934ed2f5d1dcae632d60874c0578c793d566bcdf32f6020e89f990829"]
+        "",
+        ""]
 
 EXTENSION_PATH = r'C:\Users\Mateus\Documents\Python\MetaMask 10.24.1.0.crx'
 
